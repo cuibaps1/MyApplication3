@@ -62,7 +62,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         public ImageView audioImage;
         public boolean isPlaying = false;
         private MediaPlayer mPlayer;
-
+        private int STORAGE_PERMISSION_CODE = 1;
 
 
         public MessageViewHolder(View view) {
@@ -73,50 +73,6 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             displayName = (TextView) view.findViewById(R.id.name_text_layout);
             messageImage = (ImageView) view.findViewById(R.id.message_image_layout);
             audioImage = (ImageView) view.findViewById(R.id.play_audio_image);
-
-            /*audioImage.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(view == audioImage){
-
-                        if(isPlaying == false){
-                            isPlaying = true;
-                            mPlayer = new MediaPlayer();
-
-
-
-                            Log.e("Button", "PLAYYYYYYYY");
-                        } else {
-                            isPlaying = false;
-
-
-                            try{
-                                mPlayer.release();
-                            }catch (Exception e){
-                                e.printStackTrace();
-                            }
-                            mPlayer = null;
-
-                            Log.e("Button", "STOOOOOPPP");
-                        }
-                    }
-                }
-            });*/
-
-            /*audioButton = (Button) view.findViewById(R.id.button);
-
-            audioButton.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View view, MotionEvent motionEvent) {
-                    if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
-                        Log.e("Button", "PRESSDOWN");
-
-                    } else if(motionEvent.getAction() == MotionEvent.ACTION_UP){
-                        Log.e("Button", "PRESS UPPPPPPPPPPP");
-                    }
-                    return false;
-                }
-            });*/
 
         }
 
@@ -149,7 +105,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                 viewHolder.displayName.setText(name);
 
                 Picasso.with(viewHolder.profileImage.getContext()).load(image)
-                        .placeholder(R.drawable.default_avatar).into(viewHolder.audioImage);
+                        .placeholder(R.drawable.default_avatar).into(viewHolder.profileImage);
 
             }
 
@@ -177,7 +133,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             viewHolder.messageText.setVisibility(View.INVISIBLE);
             viewHolder.messageImage.setVisibility(View.INVISIBLE);
             Log.e("asdasdasdsd", c.getMessage());
-            Picasso.with(viewHolder.audioImage.getContext()).load(c.getMessage())
+           Picasso.with(viewHolder.profileImage.getContext()).load(c.getMessage()).noFade()
                     .placeholder(R.drawable.play_audio_button).into(viewHolder.audioImage);
 
             viewHolder.audioImage.setOnClickListener(new View.OnClickListener() {
@@ -187,6 +143,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
                         if(isPlaying == false){
                             isPlaying = true;
+                            Picasso.with(viewHolder.profileImage.getContext()).load(c.getMessage()).noFade()
+                                    .placeholder(R.drawable.pause).into(viewHolder.audioImage);
                             mPlayer = new MediaPlayer();
                             FirebaseStorage storage = FirebaseStorage.getInstance();
                             StorageReference down = storage.getReferenceFromUrl(c.getMessage());
@@ -201,6 +159,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                                             @Override
                                             public void onPrepared(MediaPlayer mediaPlayer) {
                                                 mediaPlayer.start();
+                                                Picasso.with(viewHolder.profileImage.getContext()).load(c.getMessage()).noFade()
+                                                        .placeholder(R.drawable.play_audio_button).into(viewHolder.audioImage);
                                             }
                                         });
                                         mPlayer.prepare();
@@ -215,7 +175,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                             Log.e("Button", "PLAYYYYYYYY1231 Listening");
                         } else {
                             isPlaying = false;
-
+                            Picasso.with(viewHolder.profileImage.getContext()).load(c.getMessage()).noFade()
+                                    .placeholder(R.drawable.pause).into(viewHolder.audioImage);
 
                             try{
                                 mPlayer.release();
