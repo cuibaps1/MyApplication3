@@ -14,7 +14,7 @@
         android:layout_height="220dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="75sp"
+        android:layout_marginTop="100sp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/default_avatar" />
@@ -63,9 +63,9 @@
         android:layout_above="@+id/profile_decline_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/brightColor"
         android:text="ADD FRIEND"
-        android:textColor="@color/brightColor"
+        android:textColor="@color/colorAccent"
         android:textSize="15sp" />
 
     <!--Decline Friend Request-->
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75sp"
+        android:layout_marginBottom="80sp"
         android:backgroundTint="@color/colorAccent"
         android:text="DECLINE FRIEND REQUEST"
         android:textColor="@color/brightColor"

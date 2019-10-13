@@ -32,7 +32,7 @@
         android:layout_alignStart="@+id/user_single_name"
         android:layout_below="@+id/user_single_name"
         android:layout_marginTop="10dp"
-        android:text="User default Status" />
+        android:text="Empty Status" />
 
     <ImageView
         android:id="@+id/user_single_online_icon"
