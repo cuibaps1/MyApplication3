@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.message.myapplication3.RegisterActivity">
+    tools:context="com.message.myapplication3.RegisterActivity"
+    >
 
     <include
         android:id="@+id/register_toolbar"
         layout="@layout/app_bar_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_width="416dp"
+        android:layout_height="129dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/login_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Create a New Account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="80dp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/register_display_name"
@@ -83,23 +93,8 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/create_account"
-        android:textColor="@android:color/white"
+        android:textColor="@color/brightColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_password" />
-
-    <TextView
-        android:id="@+id/login_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
-        android:text="Create a New Account"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_toolbar"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="104dp" />
-
 
 </android.support.constraint.ConstraintLayout>
