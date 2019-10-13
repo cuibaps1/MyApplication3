@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/chat_app_bar"
-        layout="@layout/app_bar_layout" />
+        layout="@layout/app_bar_layout"/>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/message_swipe_layout"
@@ -120,17 +120,17 @@
         <!--CHAT MESSAGE VIEW-->
         <EditText
             android:id="@+id/chat_message_view"
-            android:layout_width="84dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:background="@color/darkColor"
+            android:background="@color/brightColor"
             android:ems="10"
             android:hint="Enter Message..."
             android:inputType="textPersonName"
-            android:paddingLeft="10dp"
-            android:paddingTop="14dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="12dp" />
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="33dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
 
         <!--CHAT SEND BUTTON-->
         <ImageButton
