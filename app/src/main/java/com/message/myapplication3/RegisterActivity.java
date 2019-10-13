@@ -144,7 +144,7 @@ public class RegisterActivity extends AppCompatActivity {
                 } else {
 
                     mRegProgress.hide();
-                    Toast.makeText(RegisterActivity.this, "Cannot Sign in. Please check the form and try again.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegisterActivity.this, "Could not sign in. Please check the form and try again.", Toast.LENGTH_LONG).show();
 
                 }
 
