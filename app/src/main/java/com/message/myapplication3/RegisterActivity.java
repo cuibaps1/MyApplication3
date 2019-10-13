@@ -54,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+
         mRegProgress = new ProgressDialog(this);
 
 
