@@ -58,9 +58,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_above="@id/record_button"
+            android:layout_marginBottom="2sp"
             android:text="00:20"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <!--RECORD BUTTON-->
         <Button
