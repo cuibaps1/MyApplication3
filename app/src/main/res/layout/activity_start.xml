@@ -13,25 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/start_login_btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="50dp"
         android:text="Welcome to \n Floo App"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
+        android:textColor="@color/brightColor"
+        android:textSize="42sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/start_reg_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@android:color/white"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:text="SIGN UP"
-        android:textColor="@color/colorPrimary" />
 
     <Button
         android:id="@+id/start_login_btn"
@@ -39,10 +26,30 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/start_reg_btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:backgroundTint="@color/colorAccent"
         android:paddingLeft="27dp"
         android:paddingRight="27dp"
         android:text="SIGN IN"
-        android:textColor="@android:color/white" />
+        android:textAlignment="center"
+        android:textColor="@color/brightColor"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/brightColor"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
 </RelativeLayout>

@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#2B616D</color> <!-- Background of UserProfile -->
     <color name="colorAccent">#FA8D62</color> <!-- Also Change Status button -->
     <color name="darkColor">#2D3033</color> <!-- black -->
-    <color name="brightColor">#D4DDE1</color> <!-- off white FCFDFE -->
+    <color name="brightColor">#FCFDFE</color> <!-- off white D4DDE1 -->
     <color name="Pdien"></color>
 </resources>
