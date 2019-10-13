@@ -61,7 +61,9 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:text="Record"
+            android:textColor="@color/brightColor"
             />
 
         <!--COUNTDOWN TIMER-->
@@ -69,12 +71,12 @@
             android:id="@+id/text_view_countdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/record_button"
-            android:layout_marginLeft="69dp"
-            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/record_button"
+            android:layout_marginTop="-43dp"
             android:text="00:20"
-            android:textColor="@android:color/black"
-            android:textSize="24dp" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
         <!--BACK BUTTON-->
         <Button
@@ -130,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/chat_message_view"
             android:layout_marginLeft="318dp"
-            android:layout_weight="10"
+            android:layout_weight="1"
             android:alpha="0.5"
             android:background="@color/brightColor"
             android:padding="10dp"
