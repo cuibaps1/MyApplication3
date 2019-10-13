@@ -28,7 +28,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -70,8 +69,8 @@ public class ChatActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mCurrentUserId;
 
-    private ImageButton mChatAddBtn;
-    private ImageButton mChatSendBtn;
+    private Button mChatAddBtn;
+    private Button mChatSendBtn;
 
     private Button mRecordButton;
     private MediaRecorder mRecorder;
@@ -157,7 +156,7 @@ public class ChatActivity extends AppCompatActivity {
         mProfileImage = (CircleImageView) findViewById(R.id.custom_bar_image);
 
         //mChatAddBtn = (ImageButton) findViewById(R.id.chat_add_btn);
-        mChatSendBtn = (ImageButton) findViewById(R.id.chat_send_btn);
+        mChatSendBtn = (Button) findViewById(R.id.chat_send_btn);
         mChatMessageView = (EditText) findViewById(R.id.chat_message_view);
 
         mRecordButton = (Button) findViewById(R.id.record_button);

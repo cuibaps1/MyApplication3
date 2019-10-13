@@ -14,19 +14,19 @@
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/message_swipe_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/linearLayout"
+        android:layout_height="570dp"
         android:layout_below="@+id/chat_app_bar"
+        android:layout_above="@+id/linearLayout"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="-3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:background="@color/brightColor">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/messages_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="570dp"
             android:layout_above="@+id/linearLayout"
             android:layout_below="@+id/chat_app_bar"
             android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
@@ -36,12 +36,10 @@
     <RelativeLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="125dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
         android:background="@color/brightColor"
-        android:orientation="horizontal"
-        android:weightSum="10">
+        android:orientation="horizontal">
 
         <!--ImageButton
             android:id="@+id/chat_add_btn"
@@ -59,8 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/record_button"
-            android:layout_marginTop="-48sp"
+            android:layout_above="@id/record_button"
             android:text="00:20"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp" />
@@ -73,7 +70,6 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:paddingHorizontal="50dp"
-            android:layout_weight="1"
             android:backgroundTint="@color/colorPrimaryDark"
             android:text="Record"
             android:textColor="@color/brightColor"
@@ -104,7 +100,7 @@
             android:text="Listen"
             android:textColor="@color/brightColor"/>
 
-        <!--SEND BUTTON-->
+        <!--SEND BUTTON (Change text to NEXT later)-->
         <Button
             android:id="@+id/record_send_record_button"
             android:layout_centerVertical="true"
@@ -120,42 +116,48 @@
         <!--CHAT MESSAGE VIEW-->
         <EditText
             android:id="@+id/chat_message_view"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="8"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
             android:background="@color/brightColor"
-            android:ems="10"
-            android:hint="Enter Subtitle For Your Message..."
+            android:ems="11"
+            android:hint="Enter Subtitle For Audio..."
             android:inputType="textPersonName"
-            android:paddingHorizontal="18dp"
-            android:layout_alignBottom="@id/record_listen_button"/>
+            />
 
-        <!--CHAT SEND BUTTON-->
+        <!--CHAT SEND BUTTON
         <ImageButton
             android:id="@+id/chat_send_btn"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_alignLeft="@+id/chat_message_view"
             android:layout_marginLeft="318dp"
             android:layout_weight="1"
             android:alpha="0.5"
             android:background="@color/brightColor"
             android:padding="10dp"
-            app:srcCompat="@drawable/ic_send_black_24dp"/>
+            app:srcCompat="@drawable/ic_send_black_24dp"/>-->
 
-        <!--<Button
+        <!--SEND SUBTITLE BUTTON-->
+        <Button
             android:id="@+id/chat_send_btn"
-
-            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="30dp"
-            android:paddingHorizontal="30dp"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="Send"
-            android:textColor="@color/brightColor"/>-->
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="@color/darkColor"
+            android:text="Send Subtitle"
+            android:textSize="11sp"
+            android:textColor="@color/brightColor"
+            />
+
 
     </RelativeLayout>
 
