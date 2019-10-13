@@ -53,62 +53,69 @@
             android:padding="10dp"
             app:srcCompat="@drawable/ic_add_black_24dp" /-->
 
-        <!--RECORD BUTTON-->
-        <Button
-            android:id="@+id/record_button"
-            android:layout_width="188dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="Record"
-            android:textColor="@color/brightColor"
-            />
-
-        <!--COUNTDOWN TIMER-->
+        <!--COUNTDOWN TIMER (with layout_marginTop in sp for testing its function-->
         <TextView
             android:id="@+id/text_view_countdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/record_button"
-            android:layout_marginTop="-43dp"
+            android:layout_marginTop="-48sp"
             android:text="00:20"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
+
+        <!--RECORD BUTTON-->
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Record"
+            android:textColor="@color/brightColor"
+            />
 
         <!--BACK BUTTON-->
         <Button
             android:id="@+id/record_back_button"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chat_message_view"
-
-            android:text="Back" />
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:paddingHorizontal="30dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="BACK"
+            android:textColor="@color/brightColor"/>
 
         <!--LISTEN BUTTON-->
         <Button
             android:id="@+id/record_listen_button"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chat_message_view"
-            android:layout_alignLeft="@+id/record_back_button"
-
-            android:layout_marginLeft="118dp"
-            android:layout_marginTop="1dp"
-            android:text="Listen" />
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="30dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Listen"
+            android:textColor="@color/brightColor"/>
 
         <!--SEND BUTTON-->
         <Button
             android:id="@+id/record_send_record_button"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chat_message_view"
-            android:layout_alignLeft="@id/record_listen_button"
-            android:layout_marginLeft="105dp"
-            android:layout_marginTop="-1dp"
-            android:text="Send" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:paddingHorizontal="30dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Send"
+            android:textColor="@color/brightColor"/>
 
         <!--CHAT MESSAGE VIEW-->
         <EditText
