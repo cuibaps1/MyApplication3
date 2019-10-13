@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:background="?android:selectableItemBackground">
 
+    <!--Avatar-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_single_image"
         android:layout_width="64dp"
@@ -14,26 +15,32 @@
         android:layout_marginTop="15dp"
         android:src="@drawable/default_avatar" />
 
+
+    <!--Username-->
     <TextView
         android:id="@+id/user_single_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/user_single_image"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/user_single_image"
         android:text="Display Name"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textColor="@color/darkColor"
+        android:textSize="20sp" />
 
+    <!--Status-->
     <TextView
         android:id="@+id/user_single_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/user_single_name"
         android:layout_below="@+id/user_single_name"
-        android:layout_marginTop="10dp"
-        android:text="Empty Status" />
+        android:layout_marginTop="0dp"
+        android:text="Empty Status"
+        android:textColor="@color/darkColor"
+        android:textSize="15sp"/>
 
+    <!--Online Icon-->
     <ImageView
         android:id="@+id/user_single_online_icon"
         android:layout_width="8dp"
