@@ -8,6 +8,7 @@
     android:padding="10dp"
     android:weightSum="10">
 
+    <!--Avatar-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/message_profile_layout"
         android:layout_width="36dp"
@@ -15,18 +16,7 @@
         android:layout_weight="0"
         android:src="@drawable/default_avatar" />
 
-    <TextView
-        android:id="@+id/message_text_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/play_audio_image"
-        android:layout_marginLeft="10dp"
-        android:layout_toEndOf="@+id/message_profile_layout"
-        android:padding="0dp"
-        android:text="Message Text"
-        android:textColor="#444444"
-        android:textSize="14sp" />
-
+    <!--Username-->
     <TextView
         android:id="@+id/name_text_layout"
         android:layout_width="wrap_content"
@@ -35,10 +25,11 @@
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/message_profile_layout"
         android:text="Display Name"
-        android:textColor="@android:color/black"
+        android:textColor="@color/darkColor"
         android:textSize="15sp"
         android:textStyle="bold" />
 
+    <!--Time Text-->
     <TextView
         android:id="@+id/time_text_layout"
         android:layout_width="wrap_content"
@@ -48,34 +39,47 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/name_text_layout"
         android:text="00:00"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:textColor="@color/darkColor"/>
 
+    <!--Playback Button-->
+    <ImageView
+        android:id="@+id/play_audio_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name_text_layout"
+        android:layout_alignStart="@+id/name_text_layout"
+        android:layout_marginTop="10dp"
+
+        android:layout_toEndOf="@+id/message_profile_layout"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play_audio_button" />
+
+    <!--Subtitle view-->
+    <TextView
+        android:id="@+id/message_text_layout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_text_layout"
+        android:layout_toRightOf="@id/play_audio_image"
+        android:layout_alignStart="@id/time_text_layout"
+        android:text="Message Text"
+        android:textColor="@color/darkColor"
+        android:textSize="13sp" />
+
+    <!--Message Image Layout-->
     <ImageView
         android:id="@+id/message_image_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/message_text_layout"
-        android:layout_below="@+id/message_text_layout"
+        android:layout_below="@+id/play_audio_image"
         android:layout_marginLeft="0dp"
         android:layout_toEndOf="@+id/message_profile_layout"
         android:padding="0dp"
         android:scaleType="centerCrop" />
-
-    <ImageView
-        android:id="@+id/play_audio_image"
-        android:src="@drawable/play_audio_button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/name_text_layout"
-        android:layout_alignStart="@+id/message_text_layout"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_toEndOf="@+id/message_profile_layout"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-         />
 
     <!--<Button
          android:id="@+id/button"
