@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/start_login_btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:text="Welcome to \n FlooApp"
+        android:layout_marginBottom="250dp"
+        android:text="Welcome to \n Floo App"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <Button
@@ -30,7 +30,7 @@
         android:backgroundTint="@android:color/white"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:text="@string/need_a_new_account"
+        android:text="SIGN UP"
         android:textColor="@color/colorPrimary" />
 
     <Button
@@ -41,8 +41,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/colorAccent"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="ALREADY HAVE ACCOUNT"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:text="SIGN IN"
         android:textColor="@android:color/white" />
 </RelativeLayout>
