@@ -41,7 +41,7 @@
         android:layout_marginTop="8dp"
         android:text="Current Status"
         android:textColor="@color/brightColor"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <!--Total Friends (Rename later)-->
     <TextView
@@ -55,7 +55,7 @@
         android:textColor="@android:color/white"
         android:textSize="15sp" />
 
-    <!--Send Friend Request-->
+    <!--Send Friend Request (Rename later)-->
     <Button
         android:id="@+id/profile_send_req_btn"
         android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="SEND FRIEND REQUEST"
+        android:text="ADD FRIEND"
         android:textColor="@color/brightColor"
         android:textSize="15sp" />
 
