@@ -16,17 +16,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/linearLayout"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/chat_app_bar"
-        android:background="@color/cardview_light_background">
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@color/brightColor">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/messages_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/linearLayout"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/chat_app_bar"></android.support.v7.widget.RecyclerView>
+            android:layout_below="@+id/chat_app_bar"
+            android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
@@ -36,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:background="@android:color/white"
+        android:background="@color/brightColor"
         android:orientation="horizontal"
         android:weightSum="10">
 
@@ -50,43 +53,18 @@
             android:padding="10dp"
             app:srcCompat="@drawable/ic_add_black_24dp" /-->
 
-        <EditText
-            android:id="@+id/chat_message_view"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
-            android:background="@android:color/white"
-            android:ems="10"
-            android:hint="Enter Message..."
-            android:inputType="textPersonName"
-            android:paddingLeft="10dp"
-            android:paddingTop="14dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="12dp" />
-
+        <!--RECORD BUTTON-->
         <Button
             android:id="@+id/record_button"
             android:layout_width="188dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chat_message_view"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="91dp"
-            android:layout_marginTop="-1dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            android:text="Record" />
+            android:text="Record"
+            />
 
-        <ImageButton
-            android:id="@+id/chat_send_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/chat_message_view"
-            android:layout_marginLeft="318dp"
-            android:layout_weight="1"
-            android:alpha="0.5"
-            android:background="@android:color/black"
-            android:padding="10dp"
-            app:srcCompat="@drawable/ic_send_black_24dp" />
-
+        <!--COUNTDOWN TIMER-->
         <TextView
             android:id="@+id/text_view_countdown"
             android:layout_width="wrap_content"
@@ -98,6 +76,7 @@
             android:textColor="@android:color/black"
             android:textSize="24dp" />
 
+        <!--BACK BUTTON-->
         <Button
             android:id="@+id/record_back_button"
             android:layout_width="wrap_content"
@@ -106,6 +85,7 @@
 
             android:text="Back" />
 
+        <!--LISTEN BUTTON-->
         <Button
             android:id="@+id/record_listen_button"
             android:layout_width="wrap_content"
@@ -117,6 +97,7 @@
             android:layout_marginTop="1dp"
             android:text="Listen" />
 
+        <!--SEND BUTTON-->
         <Button
             android:id="@+id/record_send_record_button"
             android:layout_width="wrap_content"
@@ -126,6 +107,35 @@
             android:layout_marginLeft="105dp"
             android:layout_marginTop="-1dp"
             android:text="Send" />
+
+        <!--CHAT MESSAGE VIEW-->
+        <EditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@color/darkColor"
+            android:ems="10"
+            android:hint="Enter Message..."
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp" />
+
+        <!--CHAT SEND BUTTON-->
+        <ImageButton
+            android:id="@+id/chat_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chat_message_view"
+            android:layout_marginLeft="318dp"
+            android:layout_weight="10"
+            android:alpha="0.5"
+            android:background="@color/brightColor"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+
     </RelativeLayout>
 
 
