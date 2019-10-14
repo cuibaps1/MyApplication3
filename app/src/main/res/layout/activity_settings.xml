@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Display Name"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/brightColor"
         android:textSize="35sp"
         android:textStyle="bold"/>
 
@@ -39,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="@string/default_status"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/brightColor"
         android:textSize="20sp"/>
 
     <!--Update Image-->
@@ -50,11 +50,11 @@
         android:layout_above="@+id/settings_status_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
-        android:backgroundTint="@color/brightColor"
+        android:backgroundTint="@color/colorAccent"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:text="UPDATE IMAGE"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/brightColor" />
 
     <!--Update Status-->
     <Button
@@ -64,10 +64,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/brightColor"
+        android:backgroundTint="@color/colorAccent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="UPDATE STATUS"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/brightColor" />
 
 </RelativeLayout>
