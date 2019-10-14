@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#B2DBD5</color> <!-- purple -->
-    <color name="colorPrimaryDark">#2B616D</color> <!-- Background of UserProfile -->
-    <color name="colorAccent">#FA8D62</color> <!-- Also Change Status button -->
-    <color name="darkColor">#2D3033</color> <!-- black -->
-    <color name="brightColor">#FCFDFE</color> <!-- off white D4DDE1 -->
-    <color name="Pdien"></color>
+    <color name="colorPrimary">#B0D8CF</color>
+    <color name="colorPrimaryDark">#2B616D</color>
+    <color name="colorAccent">#FA8D62</color>
+    <color name="darkColor">#2D3033</color>
+    <color name="brightColor">#FCFDFE</color>
 </resources>
