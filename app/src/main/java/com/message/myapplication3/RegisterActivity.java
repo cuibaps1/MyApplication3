@@ -69,6 +69,8 @@ public class RegisterActivity extends AppCompatActivity {
         mDisplayName = (TextInputLayout) findViewById(R.id.register_display_name);
         mEmail = (TextInputLayout) findViewById(R.id.register_email);
         mPassword = (TextInputLayout) findViewById(R.id.reg_password);
+
+        //registered button
         mCreateBtn = (Button) findViewById(R.id.reg_create_btn);
 
 

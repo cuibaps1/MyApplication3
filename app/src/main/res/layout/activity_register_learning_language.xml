@@ -18,24 +18,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="I am learning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_toolbar" />
+
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/register_display_name"
+        android:id="@+id/learning_language_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/display_name" />
+            android:hint="Language" />
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <!--android.support.design.widget.TextInputLayout
         android:id="@+id/register_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +82,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword" />
-    </android.support.design.widget.TextInputLayout>
+    </android.support.design.widget.TextInputLayout-->
 
     <Button
         android:id="@+id/reg_create_btn"
@@ -77,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="36dp"
         android:backgroundTint="@color/colorAccent"
         android:paddingLeft="20dp"
@@ -85,23 +98,9 @@
         android:text="@string/create_account"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+        app:layout_constraintTop_toBottomOf="@+id/learning_language_1" />
 
-    <Button
-        android:id="@+id/next_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="160dp"
-        android:backgroundTint="@color/colorAccent"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="Next"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+
 
 
 </android.support.constraint.ConstraintLayout>
