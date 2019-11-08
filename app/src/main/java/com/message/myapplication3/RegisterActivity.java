@@ -30,6 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
     private TextInputLayout mEmail;
     private TextInputLayout mPassword;
     private Button mCreateBtn;
+    private Button mNextBtn;
+    private Button mBackBtn;
 
 
     private Toolbar mToolbar;
@@ -70,9 +72,20 @@ public class RegisterActivity extends AppCompatActivity {
         mEmail = (TextInputLayout) findViewById(R.id.register_email);
         mPassword = (TextInputLayout) findViewById(R.id.reg_password);
 
-        //registered button
-        mCreateBtn = (Button) findViewById(R.id.reg_create_btn);
 
+        //buttons
+        mCreateBtn = (Button) findViewById(R.id.reg_create_btn);
+        mNextBtn = (Button) findViewById(R.id.reg_next_btn);
+        mBackBtn = (Button) findViewById(R.id.reg_back_btn);
+
+
+
+       /* mNextBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(this, )
+            }
+        });*/
 
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.TextInputLayout
+    <!--android.support.design.widget.TextInputLayout
         android:id="@+id/register_display_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/display_name" />
-    </android.support.design.widget.TextInputLayout>
+    </android.support.design.widget.TextInputLayout-->
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/register_email"
@@ -44,7 +44,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_display_name">
+        app:layout_constraintTop_toBottomOf="@+id/register_toolbar">
 
         <EditText
             android:layout_width="match_parent"
@@ -88,19 +88,35 @@
         app:layout_constraintTop_toBottomOf="@+id/reg_password" />
 
     <Button
-        android:id="@+id/next_btn"
+        android:id="@+id/reg_next_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="@color/colorAccent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Next"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+
+    <Button
+        android:id="@+id/reg_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_password" />
 
 
