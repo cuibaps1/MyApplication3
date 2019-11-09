@@ -9,6 +9,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -23,6 +24,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.message.myapplication3.MainActivity;
 import com.message.myapplication3.R;
+import com.message.myapplication3.StartActivity;
+import com.message.myapplication3.Users;
 
 import java.util.HashMap;
 
@@ -81,15 +84,37 @@ public class RegisterActivity extends AppCompatActivity {
         mBackBtn = (Button) findViewById(R.id.reg_back_btn);
 
 
-
-       mNextBtn.setOnClickListener(new View.OnClickListener(){
+        mNextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this, PersonalRegisterActivity.class);
-                startActivity(intent);
+                Users user = new Users();
+                String email = mEmail.getEditText().getText().toString();
+                String password = mPassword.getEditText().getText().toString();
+
+                if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
+                    user.setEmail(email);
+                    user.setPassword(password);
+                    Log.d("Email", user.getEmail());
+                    Log.d("password", user.getPassword());
+
+                    Intent intent = new Intent(RegisterActivity.this, PersonalRegisterActivity.class);
+                    startActivity(intent);
+
+                } else {
+                    Toast.makeText(getApplicationContext(),"Email or Password is empty",Toast.LENGTH_SHORT).show();
+                }
+
 
             }
         });
+
+       mBackBtn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+                Intent intent = new Intent(RegisterActivity.this, StartActivity.class);
+                startActivity(intent);
+           }
+    });
 
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
