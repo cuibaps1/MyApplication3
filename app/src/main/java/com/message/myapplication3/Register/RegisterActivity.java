@@ -1,4 +1,4 @@
-package com.message.myapplication3;
+package com.message.myapplication3.Register;
 
 
 import android.app.ProgressDialog;
@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.message.myapplication3.MainActivity;
+import com.message.myapplication3.R;
 
 import java.util.HashMap;
 
