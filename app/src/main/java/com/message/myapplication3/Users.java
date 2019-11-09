@@ -66,7 +66,7 @@ public class Users {
         return year_of_birth;
     }
 
-    public void setYear_of_birth(int year_of_birth) {
+    public void setYearOfBirth(int year_of_birth) {
         this.year_of_birth = year_of_birth;
     }
 

@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Year of Birth"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nationality"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -103,5 +103,6 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_nationality" />
+
 
 </android.support.constraint.ConstraintLayout>

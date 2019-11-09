@@ -87,17 +87,13 @@ public class RegisterActivity extends AppCompatActivity {
         mNextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Users user = new Users();
                 String email = mEmail.getEditText().getText().toString();
                 String password = mPassword.getEditText().getText().toString();
 
                 if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
-                    user.setEmail(email);
-                    user.setPassword(password);
-                    Log.d("Email", user.getEmail());
-                    Log.d("password", user.getPassword());
-
                     Intent intent = new Intent(RegisterActivity.this, PersonalRegisterActivity.class);
+                    intent.putExtra("email", email);
+                    intent.putExtra("password",password);
                     startActivity(intent);
 
                 } else {
