@@ -82,12 +82,14 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-       /* mNextBtn.setOnClickListener(new View.OnClickListener(){
+       mNextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(this, )
+                Intent intent = new Intent(RegisterActivity.this, PersonalRegisterActivity.class);
+                startActivity(intent);
+
             }
-        });*/
+        });
 
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
